@@ -9,63 +9,85 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
 
 
-</head>
-
-<body>
-<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> <!-- Джава скрипт подключение к bootstrap, чтоб было работало вспышивающее окно. Допустим без него скрипта, и не может нажать меню в списке.  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-
-	 
-
-
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-       <a class="navbar-brand" href="library.guimc.bmstu.html">
-      <img src="Logotipe.png" width="120" height="80" class="d-inline-block align-top" alt="" loading="lazy">
-    </a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+    <style>
+      @media (min-width: 768px) {
+    .navbar-brand.abs
+        {
+            position: absolute;
+            width: auto;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+    }
+    </style>
+    
+    </head>
+    
+    <body>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script> <!-- Джава скрипт подключение к bootstrap, чтоб было работало вспышивающее окно. Допустим без него скрипта, и не может нажать меню в списке.  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    
+       
+    
+    
+    
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary justify-content-center">
+      <div class="container-fluid">
+      <a class="navbar-brand abs" href="library.guimc.bmstu.html">
+        <img src="Logotipe.png" width="150" height="100" class="d-inline-block align-top" alt="" loading="lazy">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsingNavbar">
+        <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mr-auto mb-5 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="news.html">Новости</a>
-        </li>
-          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
-            Библиотека ГУИМЦ
-
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-
-            <li><a class="dropdown-item" href="library.1KURS.html">1 курс</a></li>
-            <li><a class="dropdown-item" href="library.2KURS.html">2 курс</a></li>
-            <li><a class="dropdown-item" href="library.3KURS.html">3 курс</a></li>
-            <li><a class="dropdown-item" href="library.4KURS.html">4 курс</a></li>   
-            <li><a class="dropdown-item" href="library.5KURS.html">5 курс</a></li>   
+      <div class="navbar-collapse collapse" id="collapsingNavbar">
+          <ul class="navbar-nav w-100">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="news.html">Новости</a>
+            </li>
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                Библиотека ГУИМЦ
+    
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+    
+                <li><a class="dropdown-item" href="library.1KURS.html">1 курс</a></li>
+                <li><a class="dropdown-item" href="library.2KURS.html">2 курс</a></li>
+                <li><a class="dropdown-item" href="library.3KURS.html">3 курс</a></li>
+                <li><a class="dropdown-item" href="library.4KURS.html">4 курс</a></li>   
+                <li><a class="dropdown-item" href="library.5KURS.html">5 курс</a></li>   
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="library.about.the.author.html">Об авторе</a>
+            </li>
+            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="library.support.html">
+                Поддержка
+              </a>
+            </li>
           </ul>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="library.about.the.author.html">Об авторе</a>
-        </li>
-        
-        <li class="nav-item">
-          <a class="nav-link" href="library.support.html">
-          	Поддержка
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="personal.account.html">
-            Личный кабинет
-          </a>
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input class="form-control mr-margin-right" type="search" placeholder="Поиск" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Поиск</button>
-      </form>
-    </div>
-  </div>
-</nav>
+    
+          <ul class="nav navbar-nav ml-auto w-100 justify-content-end">
+    
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+              <img src="user.png" width="40" height="40" class="d-inline-block align-top" alt="" loading="lazy">
+    
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item">Подключить к джанго авторизаций</a></li>
+          <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="personal.account.html">Личный кабинет</a></li>
+              <li><a class="dropdown-item" href="/index.html">Выйти</a></li> 
+            </ul>
+            
+          </li>
+          
+        </ul>
+      </div>
+      </div>
+    </nav>
 <div class="container slider">
   <h2 id="overview"><a class="anchorjs-link " aria-label="Anchor" data-anchorjs-icon="#" href="#overview" style="padding-left: 0.375em;"></a></h2>
 
