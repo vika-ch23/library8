@@ -90,7 +90,7 @@ body{
     width: 550px;
   }
 }
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 1200px) {
   .bg__img {
     display: none;
   }
