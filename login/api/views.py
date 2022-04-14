@@ -7,8 +7,8 @@ from django.contrib import auth
 from django.shortcuts import render
 
 
-def home_page(request):
-    return render(request, 'home.html')
+def home_page():
+    return HttpResponseRedirect("home/")
 
 
 @api_view(['POST', 'GET'])
@@ -39,7 +39,7 @@ def registration_view(request):
         data['username'] = user.username
 
         auth.login(request, user)
-        return HttpResponseRedirect("/api/account/home")
+        return HttpResponseRedirect("home/")
         # return Response(data)
 
 
@@ -77,7 +77,7 @@ def login_view(request):
             auth.login(request, user)
             data['response'] = 'Successfully authenticated.'
             data['username'] = username.lower()
-            return HttpResponseRedirect("/api/account/home")
+            return HttpResponseRedirect("home/")
         else:
             # Отображение страницы с ошибкой
             data['response'] = 'Error'
